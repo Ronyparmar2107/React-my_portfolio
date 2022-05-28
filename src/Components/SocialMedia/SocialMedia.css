@@ -1,0 +1,34 @@
+.socialmedia-maincontainer {
+    z-index: 2;
+}
+
+.socialmedia-groups {
+    list-style: none;
+    display: flex;
+    width: 20vh;
+    align-items: flex-start;
+    padding-inline-start: 0px;
+    margin-block-start: 0;
+}
+
+.socialmedia-component i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.bx:hover {
+    color: #a4b12e !important;
+    transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width : 480px) {
+    .socialmedia-maincontainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .socialmedia-groups {
+        justify-content: center;
+    }
+}

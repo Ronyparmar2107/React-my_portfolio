@@ -1,0 +1,120 @@
+#Home {
+    display: flex;
+
+}
+
+.backdrop {
+    background: white;
+    opacity: 65%;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0%;
+}
+
+.my-pic {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    height: 100vh;
+}
+
+.my-name-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 30%;
+    z-index: 2;
+    margin-left: 10%;
+}
+
+.my-name {
+    font-size: 60px;
+    z-index: 2;
+    color: #535453;
+    margin-bottom: 0%;
+}
+
+.my-title {
+    width: 30vw;
+    display: flex;
+    padding-left: 5px;
+    z-index: 2;
+    justify-content: space-between;
+    color: #737473;
+    font-family: "Poppins", sans-serif;
+}
+
+.Typewriter {
+    z-index: 2;
+    width: 30vw;
+    padding-left: 3px;
+    color: #a4b12e;
+}
+
+@media screen and (max-width : 480px) {
+
+
+    .wave {
+        position: absolute;
+        bottom: 0%;
+    }
+
+    .my-pic {
+        position: absolute;
+        bottom: 0%;
+        height: 90vh !important;
+    }
+
+    .my-name-title {
+        width: 98%;
+        margin-left: 0;
+        top: 40%;
+        justify-content: center;
+    }
+
+    .my-name {
+        width: 100%;
+        font-size: 50px;
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    .my-title {
+        font-size: 20px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Typewriter {
+        width: 60vw;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width : 481px) and (max-width:768px) {
+    .my-name-title {
+        margin-left: 5%;
+    }
+
+    .my-name {
+        font-size: 55px;
+    }
+
+    .my-title {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (min-width : 769px) and (max-width:1024px) {
+    .my-name-title {
+        margin-left: 5%;
+    }
+}

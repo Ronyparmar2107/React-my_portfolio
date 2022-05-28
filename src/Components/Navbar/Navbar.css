@@ -1,0 +1,196 @@
+.navbar-maincontainer {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar-maincontainer ul {
+    height: 100vh;
+    margin-block-start: 0;
+    padding-inline-start: 0px;
+}
+
+.navbar-maincontainer ul li {
+    list-style: none;
+    margin: 15px;
+}
+
+.navbar-component {
+    display: flex;
+    flex-direction: row;
+    border-radius: 50%;
+    height: 8vh;
+    width: 8vh;
+    background: #f2f3f5;
+    color: #737473;
+    align-items: center;
+}
+
+.hamburger-container {
+    display: none;
+}
+
+.closebutton {
+    display: none;
+
+}
+
+.icon {
+    margin: 5px;
+    padding: 18px 13px;
+    padding-right: 2px;
+    font-size: 22px;
+}
+
+.active {
+    background: #b5c00c;
+    color: white;
+}
+
+.active .icon {
+    color: white !important;
+}
+
+.NavNames {
+    display: none;
+}
+
+li:hover .navbar-component {
+    background: #b5c00c;
+    color: white;
+    width: 16vh;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+li:hover .NavNames {
+    display: block;
+    font-size: 17px;
+    padding: 17px 7px 19px 0;
+}
+
+li:hover .icon {
+    color: white !important;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar-maincontainer {
+        z-index: 101;
+        top: 0%;
+    }
+
+    .hamburger-container {
+        display: block;
+    }
+
+    .hamburger-container i {
+        font-size: 4rem;
+    }
+
+    .closebutton {
+        position: absolute;
+        top: 0%;
+        display: block;
+    }
+
+    .closebutton i {
+        font-size: 4rem;
+    }
+
+    .NavNames {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        width: 25rem;
+        height: 100vh;
+        animation: fadeInAnimation 0.8s;
+    }
+
+    .navbar-component {
+        width: 36vh;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .icon {
+        padding: 10px 10px;
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .navbar-maincontainer {
+        z-index: 101;
+        top: 0%;
+    }
+
+    .hamburger-container {
+        display: block;
+    }
+
+    .hamburger-container i {
+        font-size: 4rem;
+    }
+
+    .closebutton {
+        position: absolute;
+        top: 0%;
+        display: block;
+    }
+
+    .closebutton i {
+        font-size: 4rem;
+    }
+
+    .NavNames {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        width: 35rem;
+        height: 100vh;
+        animation: fadeInAnimation 0.8s;
+    }
+
+    .navbar-component {
+        width: 36vh;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .icon {
+        padding: 10px 10px;
+        font-size: 35px;
+    }
+}
