@@ -25,6 +25,8 @@
     background: #f2f3f5;
     color: #737473;
     align-items: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .hamburger-container {

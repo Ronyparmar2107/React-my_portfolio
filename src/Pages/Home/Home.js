@@ -7,7 +7,7 @@ import './Home.css'
 import SocialMedia from '../../Components/SocialMedia/SocialMedia';
 function Home() {
     return (
-        <div id='Home' className='Page'>
+        <div id='Home' >
             <div className='backdrop'></div>
             <img src={wave} alt='' className='wave'></img>
             <img src={myPic} alt='' className='my-pic'></img>

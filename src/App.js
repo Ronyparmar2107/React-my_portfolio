@@ -9,9 +9,8 @@ import Resume from './Pages/Resume/Resume';
 import Navbar from './Components/Navbar/Navbar'
 
 function App() {
-  console.log('Eve')
   return (
-    <div>
+    <>
       <Navbar />
       <Home />
       <About />
@@ -19,7 +18,7 @@ function App() {
       <Portfolio />
       <Contact />
 
-    </div>
+    </>
   );
 }
 

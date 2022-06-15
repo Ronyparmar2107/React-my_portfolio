@@ -1,11 +1,12 @@
 #Home {
     display: flex;
-
+    height: 99.8vh;
+    position: relative;
 }
 
 .backdrop {
     background: white;
-    opacity: 65%;
+    opacity: 60%;
     z-index: 1;
     height: 100%;
     width: 100%;
@@ -58,7 +59,9 @@
 }
 
 @media screen and (max-width : 480px) {
-
+    #Home {
+        height: 100vh;
+    }
 
     .wave {
         position: absolute;
@@ -99,6 +102,18 @@
 }
 
 @media screen and (min-width : 481px) and (max-width:768px) {
+
+    .wave {
+        position: absolute;
+        bottom: 0%;
+    }
+
+    .my-pic {
+        position: absolute;
+        bottom: 0%;
+        height: 90vh !important;
+    }
+
     .my-name-title {
         margin-left: 5%;
     }
@@ -109,6 +124,11 @@
 
     .my-title {
         font-size: 25px;
+    }
+
+    .Typewriter {
+        width: 60vw;
+        text-align: left;
     }
 
 }

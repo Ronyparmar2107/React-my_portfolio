@@ -1,0 +1,209 @@
+#About {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    margin-left: 10%;
+    padding-top: 2%;
+}
+
+.about-titlecontainer h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+}
+
+.about-titlecontainer h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.about-titlecontainer h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #b5c00c;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.about-mydescription-container {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 2%;
+}
+
+.about-me {
+    /* height: 40vh; */
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.my-portfolio-pic {
+    height: 55vh;
+    width: 55vh;
+    border-radius: 50px;
+    box-shadow: #45505b 10px 10px 20px;
+    margin-right: 2%;
+}
+
+.about-my-details {
+    padding-left: 15px;
+}
+
+.about-my-details h3 {
+    font-family: 'Raleway', sans-serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 28px;
+    font-weight: bolder;
+    color: #b5c00c;
+}
+
+.about-my-details p {
+    margin-bottom: 2%;
+}
+
+.about-my-details ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: 0px;
+}
+
+.about-my-details ul li {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.about-my-details ul li p {
+    margin-block-start: 10px;
+    margin-left: 8px;
+}
+
+.about-my-details ul li i {
+    color: #b5c00c;
+    font-size: 30px;
+}
+
+@media screen and (max-width : 480px) {
+    #About {
+        height: fit-content !important;
+        margin: auto;
+    }
+
+    .about-mydescription-container {
+        font-size: 14px;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .my-portfolio-pic {
+        height: 40vh;
+        width: 40vh;
+    }
+
+    .about-my-details {
+        padding-left: 0%;
+    }
+
+    .about-my-details h3 {
+        margin-top: 2%;
+        font-size: 20px;
+    }
+
+    .about-my-details p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .about-my-details ul {
+        flex-direction: column;
+    }
+
+    .about-my-details ul li {
+        width: 95%;
+    }
+}
+
+@media screen and (min-width : 481px) and (max-width:768px) {
+    #About {
+        height: fit-content !important;
+        margin: auto;
+    }
+
+    .about-mydescription-container {
+        font-size: 14px;
+    }
+
+    .about-my-details h3 {
+        margin-top: 2%;
+    }
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-my-details h3 {
+        text-align: center;
+    }
+
+    .about-my-details {
+        padding-left: 0%;
+    }
+
+    .about-my-details ul {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width : 769px) and (max-width:1024px) {
+    #About {
+        height: fit-content !important;
+        margin: auto;
+    }
+
+    .about-mydescription-container {
+        font-size: 14px;
+    }
+
+    .about-my-details h3 {
+        margin-top: 2%;
+    }
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-my-details h3 {
+        text-align: center;
+    }
+
+    .about-my-details {
+        padding-left: 0%;
+    }
+
+    .about-my-details ul {
+        flex-direction: row;
+    }
+}

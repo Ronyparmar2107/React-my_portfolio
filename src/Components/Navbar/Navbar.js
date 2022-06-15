@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from "react-scroll";
+
+import { Link } from 'react-scroll';
+
 
 import './Navbar.css'
 
@@ -28,7 +30,7 @@ function Navbar() {
     return (
         <div className='navbar-maincontainer'>
             {ShowNavbar === false && <div className='hamburger-container'>
-                <i class='bx bx-menu' onClick={ShowHandler}></i>
+                <i className='bx bx-menu' onClick={ShowHandler}></i>
             </div>}
             {ShowNavbar === true &&
                 <ul className='navbar'>
@@ -37,9 +39,10 @@ function Navbar() {
                         <Link
                             className='navbar-component '
                             activeClass={'active'}
-                            to="Home"
+                            to='Home'
                             spy={true}
                             smooth={true}
+                            isDynamic={true}
                             duration={500}
                             onClick={ShowHandler}
                         >
@@ -50,25 +53,29 @@ function Navbar() {
                     <li >
                         <Link
                             className='navbar-component'
-                            activeClass={'active'}
                             to="About"
+                            activeClass={'active'}
                             spy={true}
                             smooth={true}
+                            isDynamic={true}
                             duration={500}
                             onClick={ShowHandler}
+
                         >
                             <i className='bx bx-user icon' style={{ color: '#737473' }}></i>
                             <span className='NavNames'>About</span>
                         </Link>
                     </li>
-                    <li onClick={ShowHandler}>
+                    <li >
                         <Link
                             className='navbar-component'
-                            activeClass={'active'}
                             to="Resume"
+                            activeClass={'active'}
                             spy={true}
                             smooth={true}
-                            duration={500}
+                            offset={1}
+                            isDynamic={true}
+                            duration={700}
                             onClick={ShowHandler}
                         >
                             <i className='bx bx-file-blank icon' style={{ color: '#737473' }}></i>
@@ -82,6 +89,8 @@ function Navbar() {
                             to="Portfolio"
                             spy={true}
                             smooth={true}
+                            isDynamic={true}
+                            // offset={1}  
                             duration={500}
                             onClick={ShowHandler}
                         >
@@ -96,7 +105,9 @@ function Navbar() {
                             to="Contact"
                             spy={true}
                             smooth={true}
+                            isDynamic={true}
                             duration={500}
+                            // offset={3}
                             onClick={ShowHandler}
                         >
                             <i className='bx bx-envelope icon' style={{ color: '#737473' }}></i>
