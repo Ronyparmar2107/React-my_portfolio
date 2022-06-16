@@ -26,12 +26,9 @@ function Skills() {
 
     return (
         <div className='skills-maincontainer'>
-            <div className='skills-titlecontainer'>
+            <div className='titlecontainer'>
                 <h2>Skills</h2>
             </div>
-            <p className='skills-info'>
-
-            </p>
             <div className='skills-set'>
 
                 {skills.map((Skill) => {

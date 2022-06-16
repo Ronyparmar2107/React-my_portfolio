@@ -1,0 +1,207 @@
+#Contact {
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    margin-left: 10%;
+    padding-top: 2%;
+}
+
+.contact-section {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    margin-top: 5%;
+}
+
+.contact-locations {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-items {
+    display: flex;
+    margin: 5% 0 5% 5%;
+    align-items: center;
+}
+
+
+.contact-icon {
+    margin-right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    background-color: #f2ff5161;
+    font-size: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.Name-email {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.Name-email input {
+    width: 48%;
+    height: 44px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    color: #212529;
+}
+
+.input {
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.input:active,
+.input:focus {
+    outline-color: #b5c00c;
+}
+
+.Subject input,
+.Message textarea {
+    margin-bottom: 2%;
+    width: 99% !important;
+    height: 44px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    color: #212529;
+}
+
+.Form-Submit {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.Form-Submit button {
+    color: white;
+    background-color: #b5c00c;
+    border: none;
+    width: 20%;
+    height: 5vh;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.Form-Submit button:hover {
+    background-color: #cad80b;
+}
+
+@media screen and (max-width:480px) {
+    #Contact {
+        height: fit-content;
+    }
+
+    .contact-section,
+    .Name-email {
+        flex-direction: column;
+    }
+
+    .input {
+        width: 100% !important;
+        margin-bottom: 3%;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin-left: 0%;
+        height: fit-content;
+    }
+
+    .contact-items {
+        margin: 0% 0 5% 0%;
+    }
+
+    .contact-locations {
+        width: 100%;
+    }
+
+    .Form-Submit button {
+        width: 60%;
+        margin-bottom: 6%;
+    }
+}
+
+@media screen and (min-width : 481px) and (max-width:768px) {
+    #Contact {
+        height: fit-content;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin-left: 0%;
+        height: fit-content;
+    }
+
+    .Name-email input {
+        width: 45%;
+    }
+
+    .contact-items {
+        margin: 0% 0 5% 0%;
+    }
+
+    .contact-locations {
+        width: 100%;
+    }
+
+    .Form-Submit button {
+        width: 50%;
+        margin-bottom: 6%;
+    }
+
+}
+
+@media screen and (min-width : 769px) and (max-width:1024px) {
+    #Contact {
+        height: 100vh;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-items {
+        margin: 0% 0 5% 0%;
+    }
+
+    .contact-form {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .contact-locations {
+        width: 100%;
+    }
+
+    .Form-Submit button {
+        width: 50%;
+        margin-bottom: 6%;
+    }
+}

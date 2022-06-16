@@ -1,43 +1,11 @@
 #About {
-    height: fit-content;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 85vw;
     margin-left: 10%;
     padding-top: 2%;
-}
-
-.about-titlecontainer h2 {
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    color: #45505b;
-}
-
-.about-titlecontainer h2::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: #ddd;
-    bottom: 1px;
-    left: calc(50% - 60px);
-}
-
-.about-titlecontainer h2::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: #b5c00c;
-    bottom: 0;
-    left: calc(50% - 20px);
 }
 
 .about-mydescription-container {
@@ -114,6 +82,7 @@
 
     .about-me {
         flex-direction: column;
+        align-items: center;
     }
 
     .my-portfolio-pic {
@@ -122,6 +91,7 @@
     }
 
     .about-my-details {
+        margin-top: 2%;
         padding-left: 0%;
     }
 
@@ -168,11 +138,14 @@
     }
 
     .about-my-details {
+        word-break: break-word;
         padding-left: 0%;
+
     }
 
     .about-my-details ul {
         flex-direction: row;
+        font-size: 12px;
     }
 }
 

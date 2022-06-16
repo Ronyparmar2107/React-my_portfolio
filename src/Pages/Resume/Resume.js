@@ -11,7 +11,7 @@ import './Resume.css'
 function Resume() {
     return (
         <div id='Resume' >
-            <div className='resume-titlecontainer'>
+            <div className='titlecontainer'>
                 <h2>Resume</h2>
             </div>
             <div className='resume-description'>

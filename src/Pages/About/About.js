@@ -6,7 +6,7 @@ import './About.css'
 function About() {
     return (
         <div id='About' >
-            <div className='about-titlecontainer'>
+            <div className='titlecontainer'>
                 <h2>About</h2>
             </div>
             <p className='about-mydescription-container'>

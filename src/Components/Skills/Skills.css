@@ -1,39 +1,7 @@
 .skills-maincontainer {
     margin: 5% 0;
     width: 100%;
-}
-
-.skills-titlecontainer h2 {
     text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    color: #45505b;
-}
-
-.skills-titlecontainer h2::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: #ddd;
-    bottom: 1px;
-    left: calc(50% - 60px);
-}
-
-.skills-titlecontainer h2::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: #b5c00c;
-    bottom: 0;
-    left: calc(50% - 20px);
 }
 
 .skills-set {
@@ -72,6 +40,7 @@
         flex-wrap: wrap;
         width: 65%;
         justify-content: space-around;
+        margin-left: 0%;
     }
 
     .skillbar {
@@ -85,7 +54,7 @@
 @media screen and (min-width : 481px) and (max-width:768px) {
     .skills-set {
         flex-wrap: wrap;
-        width: 85%;
+        width: 75%;
         justify-content: space-around;
     }
 
@@ -102,6 +71,7 @@
         flex-wrap: wrap;
         width: 85%;
         justify-content: space-around;
+        margin-left: 0%;
     }
 
     .skillbar {

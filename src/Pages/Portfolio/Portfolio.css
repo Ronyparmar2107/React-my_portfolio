@@ -1,0 +1,162 @@
+#Portfolio {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+    margin-left: 10%;
+    padding-top: 2%;
+}
+
+.portfolio-items-container {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-navbar {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.portfolio-navbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: #45505b;
+    font-family: Raleway, sans-serif;
+}
+
+.portfolio-navbar button:hover {
+    color: #b5c00c;
+}
+
+.activeNav {
+    color: #b5c00c !important;
+}
+
+.all-portfolio-items-maincontainer {
+    margin-top: 2%;
+    display: flex;
+}
+
+.portfolio-item {
+    position: relative;
+    max-width: 95%;
+    animation: fadeanimation 0.6s ease-in-out;
+}
+
+@keyframes fadeanimation {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.portfolio-backdrop {
+    display: none;
+    position: absolute;
+    height: 97%;
+    width: 100%;
+    top: 2%;
+    opacity: 80%;
+    background-color: rgb(227, 247, 117);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    animation: Backdropfadeanimation 0.3s ease-in-out;
+}
+
+@keyframes Backdropfadeanimation {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.portfolio-item:hover .portfolio-backdrop {
+    display: flex;
+
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 4%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.websites {
+    margin: 0 10px 0 10px;
+}
+
+#all {
+    height: 400vh;
+}
+
+#websites {
+    height: 60vh;
+}
+
+#websites .portfolio-item {
+    height: 50%;
+}
+
+@media screen and (max-width:480px) {
+    .portfolio-navbar {
+        width: 100%;
+    }
+
+    #all,
+    #websites {
+        height: fit-content;
+    }
+
+    .all-portfolio-items-maincontainer {
+        display: block;
+    }
+
+    .portfolio-backdrop h3 {
+        font-size: 12px;
+    }
+
+    .portfolio-backdrop p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width : 481px) and (max-width:1024px) {
+    .portfolio-navbar {
+        width: 80%;
+    }
+
+    #all,
+    #websites {
+        height: fit-content;
+    }
+
+    .portfolio-backdrop h3 {
+        font-size: 12px;
+    }
+
+    .portfolio-backdrop p {
+        font-size: 12px;
+    }
+}

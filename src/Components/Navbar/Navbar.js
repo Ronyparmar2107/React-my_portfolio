@@ -73,7 +73,6 @@ function Navbar() {
                             activeClass={'active'}
                             spy={true}
                             smooth={true}
-                            offset={1}
                             isDynamic={true}
                             duration={700}
                             onClick={ShowHandler}
@@ -90,7 +89,6 @@ function Navbar() {
                             spy={true}
                             smooth={true}
                             isDynamic={true}
-                            // offset={1}  
                             duration={500}
                             onClick={ShowHandler}
                         >
@@ -107,7 +105,6 @@ function Navbar() {
                             smooth={true}
                             isDynamic={true}
                             duration={500}
-                            // offset={3}
                             onClick={ShowHandler}
                         >
                             <i className='bx bx-envelope icon' style={{ color: '#737473' }}></i>
