@@ -18,7 +18,7 @@ function Home() {
                     <div className='Typewriter'>
                         <Typewriter
                             options={{
-                                strings: [' Web Developer', 'Front End Developer', ' Photographer'],
+                                strings: [' a Web Developer', 'a Front End Developer', ' a Photographer'],
                                 autoStart: true,
                                 loop: true
                             }}
