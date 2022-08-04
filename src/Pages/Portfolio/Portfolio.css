@@ -18,7 +18,7 @@
 
 .portfolio-navbar {
     display: flex;
-    width: 20%;
+    width: 25%;
     justify-content: space-between;
 }
 
@@ -39,16 +39,30 @@
     color: #b5c00c !important;
 }
 
-.all-portfolio-items-maincontainer {
-    margin-top: 2%;
+.portfolio-items {
+    margin-top: 25px;
+    width: 65vw;
+    flex-wrap: wrap;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .portfolio-item {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 15px 10px;
     position: relative;
-    max-width: 95%;
     animation: fadeanimation 0.6s ease-in-out;
+    box-shadow: #0000007b 5px 5px 15px;
 }
+
+.portfolio-item:hover {
+    transform: scale(1.08);
+    transition-duration: 0.6s;
+    box-shadow: #000000 5px 8px 15px;
+}
+
 
 @keyframes fadeanimation {
     0% {
@@ -62,83 +76,13 @@
     }
 }
 
-.portfolio-backdrop {
-    display: none;
-    position: absolute;
-    height: 97%;
-    width: 100%;
-    top: 2%;
-    opacity: 80%;
-    background-color: rgb(227, 247, 117);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    animation: Backdropfadeanimation 0.3s ease-in-out;
-}
-
-@keyframes Backdropfadeanimation {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.portfolio-item:hover .portfolio-backdrop {
-    display: flex;
-
-}
-
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 4%;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-.websites {
-    margin: 0 10px 0 10px;
-}
-
-#all {
-    height: 400vh;
-}
-
-#websites {
-    height: 60vh;
-}
-
-#websites .portfolio-item {
-    height: 50%;
-}
-
 @media screen and (max-width:480px) {
     .portfolio-navbar {
         width: 100%;
     }
 
-    #all,
-    #websites {
-        height: fit-content;
-    }
-
     .all-portfolio-items-maincontainer {
         display: block;
-    }
-
-    .portfolio-backdrop h3 {
-        font-size: 12px;
-    }
-
-    .portfolio-backdrop p {
-        font-size: 12px;
     }
 }
 
@@ -147,16 +91,4 @@
         width: 80%;
     }
 
-    #all,
-    #websites {
-        height: fit-content;
-    }
-
-    .portfolio-backdrop h3 {
-        font-size: 12px;
-    }
-
-    .portfolio-backdrop p {
-        font-size: 12px;
-    }
 }

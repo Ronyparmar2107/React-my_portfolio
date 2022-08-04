@@ -20,7 +20,7 @@ function Skills() {
             Name: '<ReactJs />'
         },
         {
-            Name: 'Adobe Lightroom'
+            Name: '<React Native/>'
         },
     ]
 

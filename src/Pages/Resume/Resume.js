@@ -42,15 +42,12 @@ function Resume() {
                             iconStyle={{ background: "#ffb400", color: "#fff" }}
                         >
                             <div className="education-experirence-element">
-                                <span className='Dates'>03/2022 - PRESENT</span>
-                                <h5>FRONTEND DEVELOPER <span> - MBIT</span></h5>
+                                <span className='Dates'>06/2022 - 07/2022</span>
+                                <h5>React Native Developer <span> -TechElecon Pvt. Ltd.</span></h5>
                                 <ul>
-                                    <li>I'm one of the developer in the team of three for developing
-                                        our college new website!</li>
-                                    <li>Developed responsive web pages of official site of our
-                                        college new website!</li>
-                                    <li>Solved the issues arrised during the development of the
-                                        website!</li>
+                                    <li>Made a native application using React Native</li>
+                                    <li>Solved the problems which arrised while developing the application!</li>
+                                    <li>Ensured everything is done on time and right!</li>
                                 </ul>
                             </div>
                         </VerticalTimelineElement>
@@ -60,11 +57,15 @@ function Resume() {
                             iconStyle={{ background: "#ffb400", color: "#fff" }}
                         >
                             <div className="education-experirence-element">
-                                <span className='Dates'>06/2021- 06/2022</span>
-                                <h5>SECRATARY <span> - ISTE MBIT SC</span></h5>
+                                <span className='Dates'>03/2022 - 08/2022</span>
+                                <h5>FRONTEND DEVELOPER <span> - MBIT</span></h5>
                                 <ul>
-                                    <li>I was the secratary for ISTE MBIT SC!</li>
-                                    <li>Managed the teams and resources for the many official ISTE MBIT events!</li>
+                                    <li>I'm one of the developer in the team of three for developing
+                                        our college new website!</li>
+                                    <li>Developed responsive web pages of official site of our
+                                        college new website!</li>
+                                    <li>Solved the issues arrised during the development of the
+                                        website!</li>
                                 </ul>
                             </div>
                         </VerticalTimelineElement>

@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react'
-
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import InsertDriveFileOutlinedIcon from '@mui/icons-material/InsertDriveFileOutlined';
+import DevicesOutlinedIcon from '@mui/icons-material/DevicesOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { Link } from 'react-scroll';
 
 
@@ -46,7 +50,8 @@ function Navbar() {
                             duration={500}
                             onClick={ShowHandler}
                         >
-                            <i className='bx bx-home icon' style={{ color: '#737473' }}></i>
+                            {/* <i className='bx bx-home icon' style={{ color: '#737473' }}></i> */}
+                            <HomeOutlinedIcon className='icon' />
                             <span className='NavNames'>Home</span>
                         </Link>
                     </li>
@@ -62,7 +67,8 @@ function Navbar() {
                             onClick={ShowHandler}
 
                         >
-                            <i className='bx bx-user icon' style={{ color: '#737473' }}></i>
+                            {/* <i className='bx bx-user icon' style={{ color: '#737473' }}></i> */}
+                            <PersonOutlineOutlinedIcon className='icon' />
                             <span className='NavNames'>About</span>
                         </Link>
                     </li>
@@ -77,7 +83,8 @@ function Navbar() {
                             duration={700}
                             onClick={ShowHandler}
                         >
-                            <i className='bx bx-file-blank icon' style={{ color: '#737473' }}></i>
+                            {/* <i className='bx bx-file-blank icon' style={{ color: '#737473' }}></i> */}
+                            <InsertDriveFileOutlinedIcon className='icon' />
                             <span className='NavNames'>Resume</span>
                         </Link>
                     </li>
@@ -92,7 +99,8 @@ function Navbar() {
                             duration={500}
                             onClick={ShowHandler}
                         >
-                            <i className='bx bx-book-content icon' style={{ color: '#737473' }}></i>
+                            {/* <i className='bx bx-book-content icon' style={{ color: '#737473' }}></i> */}
+                            <DevicesOutlinedIcon className='icon' />
                             <span className='NavNames'>Portfolio</span>
                         </Link>
                     </li>
@@ -107,7 +115,8 @@ function Navbar() {
                             duration={500}
                             onClick={ShowHandler}
                         >
-                            <i className='bx bx-envelope icon' style={{ color: '#737473' }}></i>
+                            {/* <i className='bx bx-envelope icon' style={{ color: '#737473' }}></i> */}
+                            <EmailOutlinedIcon className='icon' />
                             <span className='NavNames'>Contact</span>
                         </Link>
                     </li>

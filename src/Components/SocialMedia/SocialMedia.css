@@ -11,9 +11,10 @@
     margin-block-start: 0;
 }
 
-.socialmedia-component i {
+.socialmedia-component .bx {
     font-size: 30px;
     margin-right: 10px;
+    color: '#737473';
 }
 
 .bx:hover {
